@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub 源码技术文档"
+  short_description: "按目标读者讲清 GitHub 项目的关键机制，生成 Markdown 源码导读和离线 Wiki"
+  default_prompt: "使用 $github-source-docs 为以下仓库生成源码导读。仓库：<GitHub URL>。目标用户（可选）：<读者背景或读完想完成的事>。"

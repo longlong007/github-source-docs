@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title</title>
+  <style>$css</style>
+</head>
+<body data-entry="$entry" data-title="$title">
+  <header><a class="brand" href="$home_url">$title</a>
+    <button id="tree-toggle" aria-controls="document-tree" aria-expanded="false">$contents</button>
+    <button id="outline-toggle" aria-controls="page-outline" aria-expanded="false">$outline</button>
+  </header>
+  <div class="layout">
+    <nav class="panel" id="document-tree" aria-label="$contents">
+      <h2>$contents</h2>
+      <input type="search" id="search" aria-label="$search" placeholder="$search">
+      $tree
+    </nav>
+    <main tabindex="-1"><article id="page-content"></article>
+      <noscript><a href="$raw_home">Markdown</a></noscript>
+    </main>
+    <aside class="panel" id="page-outline" aria-label="$outline">
+      <h2>$outline</h2><nav id="toc" aria-label="$outline"></nav>
+      <a id="raw" target="_blank" rel="noopener" href="$raw_home">$source</a>
+    </aside>
+  </div>
+  <button id="backdrop" type="button" aria-label="$close" tabindex="-1" hidden></button>
+  $articles
+  <script>$js</script>
+</body>
+</html>
